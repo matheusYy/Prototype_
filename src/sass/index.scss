@@ -1,0 +1,19 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --charcoal: #40434e;
+  --white: #fff;
+  --tropical-indico: #afa2ff;
+  --coral-pink: #fe938c;
+  --citraine: #bdbf09;
+  color-scheme: black;
+  color: var(--white);
+  body {
+    background-color: var(--charcoal);
+  }
+}

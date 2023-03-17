@@ -1,0 +1,33 @@
+.article-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  padding: 1px;
+  gap: 1px;
+  max-width: 900px;
+  overflow: hidden;
+  width: calc(100% - 5px);
+}
+
+.card-main-article- {
+  border-radius: 5px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  background-color: rgba(250, 250, 250, 0.02);
+  width: 100%;
+  height: 160px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-main-article-::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+}
+
+/*# sourceMappingURL=main.css.map */
