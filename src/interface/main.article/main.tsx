@@ -4,8 +4,6 @@ import { css } from "@stitches/react";
 //sub interface
 import { Title } from "./sub-interface/title";
 export const Main = (): React.ReactElement => {
-  const currentCardRef = useRef();
-  useLayoutEffect(() => {});
   const [u, setu] = useState({ x: 0, y: 0 });
 
   const gradient = {
@@ -18,8 +16,8 @@ export const Main = (): React.ReactElement => {
   });
   return (
     <main className="main-class">
-      <article className="article-cards">
         <Title />
+      <article className="article-cards">
         <div
           onMouseMove={(e) => setu({ x: e.clientX, y: e.clientY })}
           className="card-main-article- {}"
